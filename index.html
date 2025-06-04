@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Discovery Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Media Logo</div>
+        <ul class="nav-links">
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#trending">Trending Movies</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section id="intro" class="intro">
+        <div class="intro-text">
+            <h1>Welcome to Your Movies Library</h1>
+            <p>Your gateway to discovering trending movies!</p>
+            <a href="#trending" class="btn">Trending Movies</a>
+        </div>
+        <div class="intro-image">
+            <svg class="animated-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" fill="lightblue" />
+            </svg>
+        </div>
+    </section>
+
+    <section id="trending">
+        <h2>Trending Movies</h2>
+        <!-- Content for trending movies goes here -->
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <!-- Content about the platform goes here -->
+    </section>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
